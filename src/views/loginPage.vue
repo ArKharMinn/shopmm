@@ -88,7 +88,7 @@ export default {
               localStorage.setItem("AuthUseId", response.data.user.id);
               window.location.href = "/";
             } else {
-              this.checkUser = response.data.failed;
+              this.checkUser = response.data.error;
             }
           });
       }
